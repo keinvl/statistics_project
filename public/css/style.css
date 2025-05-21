@@ -1,0 +1,543 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff; 
+    font-family: 'Poppins', sans-serif;
+}
+
+/* login page */
+.login-page {
+    background-color: #ffffff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header-text {
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium';
+    color: #2c3e50;
+    font-size: 40px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.login-box {
+    background-color: #e2eef7;
+    border-radius: 25px;
+    padding: 40px 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 300px;
+    text-align: center;
+}
+
+.login-label {
+    font-size: 18px;
+    font-family: 'Franklin Gothic Medium';
+    color: #000000;
+    margin-top: 15px;
+    display: block;
+}
+
+.login-input,
+.login-button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.login-input {
+    border: 2px solid #ffcce0;
+}
+
+.login-button {
+    background-color: #ffcce0;
+    color: black;
+    font-weight: bold;
+    border: none;
+    margin-top: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+    background-color: #fbbbd1;
+}
+
+.register-text {
+    font-size: 14px;
+    color: #555;
+}
+
+.register-text a {
+    font-weight: bold;
+    color: #4a6fa5;
+    text-decoration: none;
+}
+
+.register-text a:hover {
+    text-decoration: underline;
+}
+
+.menu_top {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background-color: #e2eef7;
+    backdrop-filter: blur(8px); 
+    padding: 10px 20px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    border-radius: 0;
+}
+
+
+.menu_top a {
+    color: #5f8dcf; /* pastel blue */
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 12px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-weight: bold;
+}
+
+.menu_top a:hover {
+    background-color: #d4e8ff;
+    color: #2c4e80;
+}
+
+.logout-btn {
+    background-color: #ffccd5;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 12px;
+    padding: 8px 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.logout-btn:hover {
+    background-color: #ffaebd;
+}
+
+.probability-container {
+    padding-top: 60px;  
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+.probability-box {
+    background-image: url('/images/s1.jpg');
+    background-size: contain;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-color: #fefefe;
+    border-radius: 15px;
+    border: 2px solid #e2eef7;
+    padding: 160px 30px 30px 30px; 
+    max-width: 600px;
+    margin: 30px auto;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    position: relative;
+    text-align: left;
+}
+
+/* Header */
+h2.mb-4 {
+    font-size: 32px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium';
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 30px !important;
+}
+
+/* Subheading / description */
+.text-muted {
+    color: #6c757d !important;
+    font-size: 15px;
+}
+
+/* Labels */
+label {
+    font-weight: 500;
+    margin-bottom: 6px;
+    display: block;
+    color: #333;
+}
+
+/* Form elements */
+.form-control,
+.form-select {
+    border-radius: 6px;
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+    font-size: 15px;
+    transition: all 0.3s ease;
+}
+
+/* Input focus effect */
+.form-control:focus,
+.form-select:focus {
+    border-color: #6495ed;
+    box-shadow: 0 0 5px rgba(100, 149, 237, 0.5);
+}
+
+/* Submit button */
+.btn-primary {
+    background-color: #6495ed;
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #4169e1;
+}
+
+/* Alerts styling */
+.alert {
+    font-size: 15px;
+    padding: 12px 18px;
+    border-radius: 8px;
+}
+
+/* Chart */
+canvas#chart {
+    max-width: 100%;
+    margin-top: 30px;
+}
+
+/* Divider */
+hr.mb-4 {
+    border: 0;
+    height: 1px;
+    background: #ccc;
+    margin-bottom: 30px !important;
+}
+
+/* Basic */
+.basic-container {
+    text-align: center;
+    padding-top: 60px;  
+    padding-bottom: 40px;
+}
+
+.welcome-title {
+    font-family: 'Franklin Gothic Medium';
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.welcome-subtitle {
+    margin-top: -25px;
+    margin-bottom: 45px;
+    font-size: 20px;
+}
+
+.calculator-box {
+    background-image: url('/images/s1.jpg');
+    background-size: contain;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-color: #fefefe;
+    border-radius: 15px;
+    border: 2px solid #e2eef7;
+    padding: 160px 30px 30px 30px; /* tambahkan atas supaya teks di bawah gambar */
+    max-width: 600px;
+    margin: 30px auto;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    position: relative;
+}
+
+.input-field {
+    width: 520px;
+    max-width: 90%;
+    margin: 0 auto 20px auto;
+    display: block;
+    padding: 10px;
+    border: 2px solid #ffcce0;
+    border-radius: 8px;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.calculate-button {
+    background-color: #ffcce0;
+    color: black;
+    font-weight: bold;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.calculate-button:hover {
+    background-color: #fbbbd1;
+}
+
+.reset-button {
+    background-color: #e2eef7;
+    color: #000000;
+    font-weight: bold;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 8px;
+    font-size: 18px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.reset-button:hover {
+    background-color: #cce2f5;
+}
+
+.results-area {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 25px;
+}
+
+.stat-card {
+    background-color: #d6dee4;
+    border-radius: 10px;
+    padding: 15px 20px;
+    width: 130px;
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    margin: 10px; /* spacing natural dan seimbang */
+}
+
+/* Inferential */
+.inferential-container {
+    padding-top: 60px;  
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+.inferential-box {
+    background-image: url('/images/s1.jpg');
+    background-size: contain;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-color: #fefefe;
+    border-radius: 15px;
+    border: 2px solid #e2eef7;
+    padding: 160px 30px 30px 30px; 
+    max-width: 600px;
+    margin: 30px auto;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    position: relative;
+    text-align: left;
+}
+
+/*visualization*/
+.visualization-container {
+    text-align: center;
+    padding-top: 60px;  
+    padding-bottom: 40px;
+}
+
+.visualization-box {
+    background-image: url('/images/s1.jpg');
+    background-size: contain;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-color: #fefefe;
+    border-radius: 15px;
+    border: 2px solid #e2eef7;
+    padding: 160px 30px 30px 30px; 
+    max-width: 600px;
+    margin: 30px auto;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    position: relative;
+    text-align: left;
+}
+
+.visualize-btn {
+    background-color: #ffcce0;
+    color: black;
+    font-weight: bold;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 8px;
+    margin-top: 20px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.visualize-btn:hover {
+    background-color: #fbbbd1;
+}
+
+
+/*footer*/
+footer {
+    text-align:center; 
+    background:#e2eef7; 
+    padding:20px 0; 
+    font-family:'Poppins', sans-serif; 
+    margin-top: 40px; 
+    border-top: 2px solid #d9eaff;
+}
+
+.footer_title {
+    font-weight:bold; 
+    font-size: 18px;
+}
+
+.footer_name {
+    margin: 0 8px 5px;
+}
+
+.footer_nim {
+    margin: 0 8px 40px;
+}
+
+.nim {
+    margin: 0 35px;
+}
+
+.separator {
+    margin: 0 8px;
+    color: #888;
+}
+
+.footer_copyright {
+    margin-top: 20px;
+    font-size: 14px; 
+    color: #666;
+}
+
+@media screen and (max-width: 768px) {
+    .header-text {
+        font-size: 28px;
+    }
+
+    .login-title, .register-title {
+        font-size: 22px;
+    }
+
+    .login-label {
+        font-size: 15px;
+    }
+
+    .login-input, .login-button {
+        font-size: 14px;
+    }
+
+    .login-box {
+        padding: 30px 20px;
+        max-width: 100%;
+    }
+
+    .register-text {
+        font-size: 13px;
+    }
+
+    .navbar a {
+        font-size: 15px;
+    }
+
+    h2.mb-4 {
+        font-size: 20px;
+    }
+    
+    .calculator-box,
+    .probability-box,
+    .inferential-box,
+    .visualization-box {
+        padding: 100px 20px 20px 20px;
+        margin: 20px 15px;
+        max-width: 90%;
+        box-sizing: border-box;
+    }
+
+    .basic-container,
+    .probability-container,
+    .inferential-container,
+    .visualization-container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .input-field {
+        width: 100%;
+    }
+
+    .calculate-button,
+    .reset-button,
+    .visualize-btn {
+        width: 100%;
+        margin-top: 10px;
+        font-size: 16px;
+    }
+
+    .menu_top {
+        flex-wrap: wrap;
+        gap: 10px;
+        padding: 8px 10px;
+    }
+
+    .menu_top a,
+    .logout-btn {
+        font-size: 14px;
+        padding: 6px 10px;
+    }
+
+    .results-area {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .stat-card {
+        width: 90%;
+    }
+
+    .welcome-title {
+        font-size: 32px;
+    }
+
+    .welcome-subtitle {
+        font-size: 16px;
+    }
+
+    footer .footer_title {
+        font-size: 16px;
+    }
+
+    .footer_name,
+    .footer_nim,
+    .nim {
+        margin: 5px 0;
+        display: block;
+    }
+
+    .separator {
+        display: none;
+    }
+    
+}
