@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 class InferentialController extends Controller
 {
     public function index() {
-        return view('Inferential');
+        return view('inferential');
     }
 
     public function confidenceInterval(Request $request) {
